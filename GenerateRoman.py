@@ -9,14 +9,14 @@ Created on Fri Dec  8 16:49:15 2017
 from collections import OrderedDict
 
 
-class generateRoman:
+class GenerateRoman:
     def __init__(self):
         ''' Constructor for this class. '''
         # Create some member animals
         self.members = ['Tiger', 'Elephant', 'Wild Cat']
  
  
-    def generateRoman(self,num):
+    def GenerateRoman(self,num):
 
         roman = OrderedDict()
         roman[1000] = "M"
