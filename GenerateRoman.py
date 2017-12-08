@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 def GenerateRoman(num):
-
+    global roman
     roman = OrderedDict()
     roman[1000] = "M"
     roman[900] = "CM"
@@ -19,6 +19,7 @@ def GenerateRoman(num):
     return "".join([a for a in roman_num(num)])
 
 def roman_num(num):
+    global roman
     for r in roman.keys():
         x, y = divmod(num, r)
         yield roman[r] * x
@@ -27,3 +28,4 @@ def roman_num(num):
             roman_num(num)
         else:
             break
+
