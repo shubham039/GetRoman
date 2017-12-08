@@ -1,6 +1,6 @@
 from collections import OrderedDict
 
-def GenerateRoman(num):
+def convert(num):
     global roman
     roman = OrderedDict()
     roman[1000] = "M"
