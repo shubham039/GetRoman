@@ -6,7 +6,7 @@ Created on Fri Dec  8 16:57:45 2017
 @author: shubham
 """
 
-from setup import setup
+from setuptools import setup
 setup(
   name = 'GenerateRoman',
   packages = ['GenerateRoman'], # this must be the same as the name above
